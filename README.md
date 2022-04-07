@@ -57,10 +57,10 @@ In order for the Red Hat Satellite Server to manage your environment subscriptio
 
 In this section we will cover the following:
 
-- Red Hat's default repositories management
-- Custom repositories management
-- Sync Plans
-- Content Views
+- [Red Hat's default repositories management](#Default-repositories)
+- [Custom repositories management](#Custom-repositories-"-Fedora-Example-")
+- [Sync Plans](#Sync-Plans)
+- [Content Views](#Content-views) 
 
 
 ### Default repositories
