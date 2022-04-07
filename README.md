@@ -230,6 +230,26 @@ For remote actions via katello-agent:
 yum -y install katello-agent
 ```
 ## Patch Management
+Patch Management is one of the critical activities that takes place in operating system world. Red Hat Satellite has the ability to manage the patch at scale which help you to secure your system and save your time.
+
+### Individual Host Patch Management 
+
+1- Login as admin to your Red Hat Satellite Server gui. 
+
+2- Move the cursor on host from the left tab menu.
+
+3- Choose Content Hosts
+
+4- As you can see below in the image , all the host has been already scanned towards their respective repositories and the patches are available under the Installable Updates column. 
+
+![image](https://user-images.githubusercontent.com/73826486/162186545-d2724857-b433-4ff4-9259-4ad801fc87e6.png)
+
+5- Now click on security and select the Errata needed to be patched and click on apply.
+ 
+   Also you can click on the ID of the Errata itself and get more description on the patch. 
+   
+![image](https://user-images.githubusercontent.com/73826486/162188411-6bc3bd93-8780-4acb-a660-2944f8256ba0.png)
+
 ## Red Hat Insight Integration
 
 
