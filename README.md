@@ -58,7 +58,7 @@ In order for the Red Hat Satellite Server to manage your environment subscriptio
 In this section we will cover the following:
 
 - [Red Hat's default repositories management](#Default-repositories)
-- [Custom repositories management](#Custom-repositories-"-Fedora-Example-")
+- [Custom repositories management](#Custom-repositories-"Fedora-Example")
 - [Sync Plans](#Sync-Plans)
 - [Content Views](#Content-views) 
 
@@ -89,7 +89,7 @@ In this section we will cover the following:
 Now the repositories will start to be downloaded from the Red Hat CDN to your Satellite server.These repos contains approx 40000 packages so the download will take time depending on the speed of your internet in my lab it took me 45 min.
 
 
-### Custom repositories " Fedora Example "
+### Custom repositories "Fedora Example"
 
 1- Login as admin to your Red Hat Satellite Server gui. 
 
