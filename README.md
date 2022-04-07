@@ -12,7 +12,7 @@ run a simple and quick Red Hat Satellite setup.
 - [Subscription Management](#Subscription-Management)
 - [Content Management](#Content-Management)
 - [Host Registration](#Host-Registration)
-- [Patch Management] (#Patch-Management)
+- [Patch Management](#Patch-Management)
 - [Red Hat Insight Integration](#Red-Hat-Insight-Integration)  
 
 
