@@ -250,7 +250,7 @@ Patch Management is one of the critical activities that takes place in operating
    
 ![image](https://user-images.githubusercontent.com/73826486/162188411-6bc3bd93-8780-4acb-a660-2944f8256ba0.png)
 
-### 
+### Patch Management at Scale
 
 ## Red Hat Insight Integration
 
