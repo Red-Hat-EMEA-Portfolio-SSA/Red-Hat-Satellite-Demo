@@ -9,11 +9,11 @@ run a simple and quick Red Hat Satellite setup.
 
 ## I will cover the following use cases:
 
-- Subscription Management
-- Content Management 
-- Host Registration
-- Patch Management 
-- Red Hat Insight Integration  
+- [Subscription Management](#Subscription-Management)
+- [Content Management]
+- [Host Registration]
+- [Patch Management] 
+- [Red Hat Insight Integration]  
 
 
 #### This guide has been tested on Red Hat Satellite 6.9 
@@ -203,24 +203,48 @@ Now Fedora 8 repo , Ansible & Satellite tools are part of the content view and t
 
 Now it is time to connect the client server with satellite so they can benefit from the subscriptions and content created in the previous steps.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+1- Install the pre-built bootstrap RPM to point the client into satellite instead of CDN:
 ```bash
-  npm run deploy
+curl --insecure --output katello-ca-consumer-latest.noarch.rpm https://satellite.example.com/pub/katello-ca-consumer-latest.noarch.rpm
+yum localinstall katello-ca-consumer-latest.noarch.rpm 
 ```
+
+2- Register using subscription-manager using an Activation Key:
+```bash
+subscription-manager register --org="Hackfest" --activationkey="<Activation Key Name>"
+```
+3- Enable satellite-tools repository if you want to use client tools such as katello-agent or puppet:
+```bash
+subscription-manager repos --enable=satellite-tools-$SATELLITE_VERSION-for-rhel-$RHEL_MAJOR_VERSION-x86_64-rpms
+```
+4-Install client package to report package & errata information:
+```bash
+yum -y install katello-host-tools
+```
+Tracer helps administrators identify applications that need to be restarted after a system is patched. To optionally report tracer information:
+```bash
+yum -y install katello-host-tools-tracer
+```
+For remote actions via katello-agent:
+```bash
+yum -y install katello-agent
+```
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
