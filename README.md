@@ -10,10 +10,10 @@ run a simple and quick Red Hat Satellite setup.
 ## I will cover the following use cases:
 
 - [Subscription Management](#Subscription-Management)
-- [Content Management]
-- [Host Registration]
-- [Patch Management] 
-- [Red Hat Insight Integration]  
+- [Content Management](#Content-Management)
+- [Host Registration](#Host-Registration)
+- [Patch Management] (#Patch-Management)
+- [Red Hat Insight Integration](#Red-Hat-Insight-Integration)  
 
 
 #### This guide has been tested on Red Hat Satellite 6.9 
@@ -229,7 +229,8 @@ For remote actions via katello-agent:
 ```bash
 yum -y install katello-agent
 ```
- 
+## Patch Management
+## Red Hat Insight Integration
 
 
 
